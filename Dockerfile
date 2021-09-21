@@ -12,18 +12,19 @@ ENV TAUTULLI_DOCKER=True
 
 RUN \
  echo "**** install build packages ****" && \
+ apt-get update && \
  apt-get install -y \
 	g++ \
 	gcc \
 	make \
-	py3-pip \
+	python3-pip \
 	python3-dev && \
  echo "**** install packages ****" && \
  apt-get install -y \
  	curl \
 	jq \
-	py3-openssl \
-	py3-setuptools \
+	python3-openssl \
+	python3-setuptools \
 	python3 && \
  echo "**** install pip packages ****" && \
  pip3 install --no-cache-dir -U \
