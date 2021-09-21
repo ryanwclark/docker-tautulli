@@ -12,14 +12,14 @@ ENV TAUTULLI_DOCKER=True
 
 RUN \
  echo "**** install build packages ****" && \
- apt install --no-cache --virtual=build-dependencies \
+ apt-get install -y \
 	g++ \
 	gcc \
 	make \
 	py3-pip \
 	python3-dev && \
  echo "**** install packages ****" && \
- apt install --no-cache \
+ apt-get install -y \
  	curl \
 	jq \
 	py3-openssl \
