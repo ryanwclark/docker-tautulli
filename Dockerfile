@@ -47,8 +47,8 @@ RUN \
  echo "${TAUTULLI_RELEASE}" > /app/tautulli/version.txt && \
  echo "master" > /app/tautulli/branch.txt && \
  echo "**** cleanup ****" && \
- apk del --purge \
-	build-dependencies && \
+#  apt-get purge \
+# 	build-dependencies && \
  rm -rf \
 	/root/.cache \
 	/tmp/*
