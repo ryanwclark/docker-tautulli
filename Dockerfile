@@ -5,7 +5,7 @@ ARG BUILD_DATE
 ARG VERSION
 ARG TAUTULLI_RELEASE
 LABEL build_version="version:- ${VERSION} Build-date:- ${BUILD_DATE}"
-LABEL maintainer="nemchik,thelamer"
+LABEL maintainer="Ryan Clark <ryanwclark@yahoo.com>"
 
 # Inform app this is a docker env
 ENV TAUTULLI_DOCKER=True
